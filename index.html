@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPET12L: Activity 10</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styleanimal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+</head>
+
+<!--May Changes sa <body> tag-->
+<body data-spy="scroll" data-target=".nav" data-offset="1">
+    <div class="container-fluid ">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+            <a href="#" class="navbar-brand">THE PHILIPPINE WILDLIFE</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ml-5">
+                    <li class="nav-item m-0">
+                        <a href="#gallery_section" class="nav-link">SPECIES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#learn_sec" class="nav-link">LEARN</a>
+                    </li>
+                    <li class="nav-item m-0">
+                      <a href="#membership" class="nav-link">JOIN</a>
+                  </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">ABOUT US</a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#myModal1">Diane Claire Fajardo</a>
+                          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#myModal2">John Paul Villanueva</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+        <!--Carousel-->
+        <div class="container-fluid">
+            <div id="demo" class="carousel slide carousel-fade" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                  <li data-target="#demo" data-slide-to="0" class="active" ></li>
+                  <li data-target="#demo" data-slide-to="1"></li>
+                  <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+              
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active align-items-start">
+                    <img src="./imgs/Philippine-Eagle.jpg" alt="Eagle">
+                    <div class="carousel-caption top-0 mt-1">
+                        <h1 class="display-1 fw-bolder" id="title"><b>DISCOVER THE ENDEMIC WILDLIFE OF THE PHILIPPINES</b></h1>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./imgs/tarsier.jpg" alt="Tarsier">
+                    <div class="carousel-caption top-0 mt-1">
+                        <h1 class="display-1 fw-bolder" id="title"><b>Learn How To Protect and Conserve our Wildlifes</b></h1>
+                        <a href="#learn_sec"><button class="btn btn-dark px-5 py-2 fs-5 mt-2" >Learn Now</button></a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./imgs/tamaraw.jpg" alt="Tamaraw">
+                    <div class="carousel-caption top-0 mt-1">
+                        <h1 class="display-1 fw-bolder" id="title"><b>A CPET12L Activity by: <br> John Paul Villanueva & Diane Claire Fajardo</b></h1>
+                    </div>
+                  </div>
+                </div>
+              
+                <!-- Left and right controls for Carousel -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+
+          <br>
+          <br>
+          <div id="article" class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                        <p class="wildlife_article">Although many of the mountain regions and some of the lowlands in the Philippines remain heavily forested, 
+                            the country’s forests have been shrinking rapidly for decades. Between the mid-20th century and the early 21st century, 
+                            the country’s forestland was reduced by more than half—largely a result of logging, mining, and farming activities—and now accounts for less than one-fourth of the country’s total land area. 
+                            Where forests remain in northern Luzon, the principal mountain tree is pine. In other areas, lauan <span class="text-primary"><a href="#" data-toggle="tooltip" data-placement="top" title="Philippine mahogany is a common name for several different species of trees and their wood. Botanically, the name refers to Toona calantas in the mahogany family, Meliaceae. It is endemic to the Philippines. In the US timber trade, it is often applied to wood of the genus Shorea in the family Dipterocarpaceae.">(Philippine mahogany)</a></span> often predominates.
+                        </p>
+                </div>
+                <div class="col-sm-6">
+                  <iframe class="my-5" width="560" height="315" src="https://www.youtube-nocookie.com/embed/iCwKJmiFwic?si=nSechnGoRXjDSh1k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <p class="wildlife_article">The Philippines are inhabited by more than 200 species of mammals, including water buffalo <span class="text-primary"><a href="#" data-toggle="tooltip" data-placement="top" title="Carabao (Filipino: kalabáw; Cebuano: kábaw; Ilocano: nuang) is the Philippine English term for the water buffalo (Bubalus bubalis). In the Philippines, Carabao represents hard work.">(carabao)</a></span>, 
+                        goats, horses, hogs, cats, dogs, monkeys, squirrels, lemurs, mice, pangolins <span class="text-primary"><a href="#" data-toggle="tooltip" data-placement="top" title="Pangolins eat ants, termites and larvae and are often known as the scaly anteater. Because they have no teeth, pangolins pick up food with their sticky tongues, which can sometimes reach lengths greater than the animal's body.">(scaly anteaters)</a></span>, 
+                        chevrotains <a href="#" data-toggle="tooltip" data-placement="top" title="Chevrotains, or mouse-deer, are diminutive, even-toed ungulates that make up the family Tragulidae, and are the only living members of the infraorder Tragulina. The 10 extant species are placed in three genera, but several species also are known only from fossils. ">(mouse deer)</a>, 
+                        mongooses, civet cats, and red and brown deer, among others. The tamarau <span class="text-primary"><a href="#" data-toggle="tooltip" data-placement="top" title="The tamaraw or Mindoro dwarf buffalo is a small buffalo belonging to the family Bovidae. It is endemic to the island of Mindoro in the Philippines, and is the only endemic Philippine bovine. It is believed, however, to have once also thrived on the larger island of Luzon.">(Anoa mindorensis)</a></span>, 
+                        a species of small water buffalo, is found only on Mindoro. Of more than 50 species of bats, many are peculiar to the Philippines. 
+                        Fossil remains show that elephants once lived on the islands.
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <div>
+                        <img src="./imgs/pangolin.jpg" alt="palawan pangolin" class="ml-5" id="pangolin">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="wildlife_article">Hundreds of species of birds live in the Philippines, either for all or part of the year. 
+                        Prominent birdlife includes jungle fowl, pigeons, peacocks, pheasants, doves, parrots, hornbills, kingfishers, sunbirds, tailorbirds, weaverbirds, herons, and quails. Many species are endemic to the island of Palawan. 
+                        The endangered Philippine eagle <span class="text-primary"><a href="#" data-toggle="tooltip" data-placement="top" title="The Philippine eagle, also known as the monkey-eating eagle or great Philippine eagle, is a critically endangered species of eagle of the family Accipitridae which is endemic to forests in the Philippines.">(Pithecophaga jefferyi)</a></span> is limited mainly to isolated areas on Mindanao and in the Sierra Madre on Luzon.
+                    </p>
+                </div>
+            </div>
+          </div>
+
+          <!--Gallery-->
+
+          <section class="gallery-block cards-gallery" id="gallery_section">
+            <div class="container">
+              <div class="heading">
+                <h2 id="heading">Endangered Endemic Animals Of the Philippines</h2>
+              </div>
+              <hr width="1290px">
+              <div class="row pt-5">
+                <div class="col-md-6 col-lg-4">
+                  <div class="card border-5 transform-on-hover">
+                    <a class="lightbox" href="https://peregrinefund.org/explore-raptors-species/eagles/philippine-eagle"><img src="./imgs/Philippine-Eagle.jpg" class="card-img-top img-fluid" id="gallery"></a>
+                    <div class="card-body bg-dark text-white">
+                      <h6>Philippine Eagle</h6>
+                      <p class="text-white card-text">Pithecophaga jefferyi</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                  <div class="card border-5 transform-on-hover">
+                    <a class="lightbox" href="https://animalia.bio/tamaraw"><img src="./imgs/tamaraw.jpg" class="card-img-top img-fluid" id="gallery"></a>
+                    <div class="card-body bg-dark text-white">
+                      <h6>Philippine Tamaraw</h6>
+                      <p class="text-white card-text">Bubalus mindorensis</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                  <div class="card border-5 transform-on-hover">
+                    <a class="lightbox" href="https://neprimateconservancy.org/philippine-tarsier/"><img src="./imgs/tarsier.jpg" class="card-img-top img-fluid" id="gallery"></a>
+                    <div class="card-body bg-dark text-white">
+                      <h6>Philippine Tarsier</h6>
+                      <p class="text-white card-text">Carlito syrichta</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-md-6 col-lg-4">
+                  <div class="card border-5 transform-on-hover">
+                    <a class="lightbox" href="https://animaldiversity.org/accounts/Manis_culionensis/"><img src="./imgs/pangolin2.jpg" class="card-img-top img-fluid" id="gallery"></a>
+                    <div class="card-body bg-dark text-white">
+                      <h6>Philippine Pangolin</h6>
+                      <p class="text-white card-text">Manis culionensis</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                  <div class="card border-5 transform-on-hover">
+                    <a class="lightbox" href="https://news.mongabay.com/2020/04/in-the-philippines-boracay-flying-foxes-are-going-going-gone/"><img src="./imgs/bat.jpg" class="card-img-top img-fluid" id="gallery"></a>
+                    <div class="card-body bg-dark text-white">
+                      <h6>Golden-crowned Flying Fox</h6>
+                      <p class="text-white card-text">Acerodon jubatus</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                  <div class="card border-5 transform-on-hover">
+                    <a class="lightbox" href="https://animalia.bio/visayan-warty-pig?custom_list=1381"><img src="./imgs/pig.png" class="card-img-top img-fluid" id="gallery"></a>
+                    <div class="card-body bg-dark text-white">
+                      <h6>Visayan Warty Pig</h6>
+                      <p class="text-white card-text">Sus cebifrons</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!--Learn how to Conserve the environment-->
+
+          <div class="container justify-content-center pb-20" id="learn_sec">
+            <center>
+              <h2 id="ways"><strong>WAYS TO CONSERVE THE NATURAL WILDLIFES</strong></h2>
+              <p>Below are some tips to protect and conserve the natural wildlifes according to <i><a class="text-yellow" href="https://createthegood.aarp.org/volunteer-ideas/protect-wildlife.html?fbclid=IwAR2p_bsKKcT6R6fsixCgHQYkv2rUQ0FZz6Zd2DosZGOnRAcwDY89E5gwHQc">AARP.org</a></i>, <strong>click each tabs to see the description</strong></p>
+              <br>
+            </center>
+            <div id="accordion">
+              <div class="card bg-white text-dark">
+                <div class="card-header bg-dark">
+                  <a class="card-link text-white" data-toggle="collapse" href="#collapseOne">
+                    1. Plant native species
+                  </a>
+                </div>
+                <div id="collapseOne" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                    Creating planet- and wildlife-friendly environments can start right in your own backyard and in your community. Plant native species of trees, bushes, and plants, especially those that flower and provide food sources for wild animals. Trees recycle oxygen, returning it to the atmosphere for us to breathe and absorbing potentially harmful gases along the way. Get involved in an organization that supports community trees like <strong><a href="#" data-toggle="popover" title="What is the Aim of ACTrees Organization?" data-trigger="hover" data-content="An organization that helps the wildlife by planting trees">ACTrees</a></strong>, or learn how to plant your own. 
+                    It's also a good idea to think beyond the typical lawn, which can be a drain on water supplies and not offer much food or support for animal life. Allow your manicured lawn to go a little wild. Replace part of the lawn with vegetable or flower gardens filled with native species. Even a small garden can also have a big impact. Find out which species are native to your area. 
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-white text-dark">
+                <div class="card-header bg-dark">
+                  <a class="collapsed card-link text-white" data-toggle="collapse" href="#collapseTwo">
+                    2. Help the zoo or aquarium
+                </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                    Zoos and aquariums often have wildlife conservation efforts. Find out how you can volunteer to help spread the word about or work to support wild animals through the <strong><a href="#" data-toggle="popover" title="What is the Mission of Association of Zoo Docents and Volunteers?" data-trigger="hover" data-content="An international organization dedicated to promoting professionalism in our volunteering experiences at zoos and aquariums everywhere. ">Association of Zoo Docents and Volunteers</a></strong>. Or get your office involved. Whether you want to liven up your next office videoconference or want to have a special visitor when you video chat with your family, the Cincinnati Zoo puts the zoo in Zoom. For a fee, you can get a 15-minute call with zoo stars like Fiona the hippopotamus or a group of wallabies or goats.
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-white text-dark">
+                <div class="card-header bg-dark">
+                  <a class="collapsed card-link text-white" data-toggle="collapse" href="#collapseThree">
+                    3. Make your yard a wildlife haven
+                  </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                    In addition to planting native food sources for wildlife in your area, you can also help them create habitats by installing bird feeders, baths, and houses. In addition to giving birds necessary shelter and sustenance, watching the birds that visit can be very entertaining. The <strong><a href="#" data-toggle="popover" title="What is the Mission of National Wildlife Federation?" data-trigger="hover" data-content="The National Wildlife Federation is the United States' largest private, nonprofit conservation education and advocacy organization, with over six million members and supporters, and 51 state and territorial affiliated organizations.  ">National Wildlife Federation</a></strong> has other suggestions to make your yard wildlife friendly. 
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-white text-dark">
+                <div class="card-header bg-dark">
+                  <a class="collapsed card-link text-white" data-toggle="collapse" href="#collapseFour">
+                    4. Avoid harmful chemicals
+                  </a>
+                </div>
+                <div id="collapseFour" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                    In our efforts to spur lawn growth and control pests, we may turn to chemical solutions, which can be very harmful to wildlife like bees and butterflies that are helpful to the environment. Fertilizers usually find their way into water sources, polluting rivers, and streams, causing harmful algae blooms, and poisoning the aquatic life.Instead, opt for <strong><a href="#" data-toggle="popover" title="What is a Natural Pest Control?" data-trigger="hover" data-content="Natural pest control refers to pest control methods that rely on natural (chemical-free) remedies. From essential oils to fly traps to food grade Diatomaceous Earth, several natural elements can help control the pest population. These solutions are often safe for pets and small children and non-toxic">natural pest control</a></strong> to discourage critters in your garden, and organic fertilizers like animal manure or compost.
+                </div>
+              </div>
+              <div class="card bg-white text-dark">
+                <div class="card-header bg-dark">
+                  <a class="collapsed card-link text-white" data-toggle="collapse" href="#collapseFive">
+                    5. Pick up trash 
+                  </a>
+                </div>
+                <div id="collapseFive" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                    Picking up trash not only protects the environment and keeps our surroundings beautiful, but it can also save wildlife. <strong><a href="#" data-toggle="popover" title="What is the Harmful Effects of Plastic Bags?" data-trigger="hover" data-content="Plastic bags are difficult and costly to recycle and most end up on landfill sites where they take around 300 years to photodegrade. They break down into tiny toxic particles that contaminate the soil and waterways and enter the food chain when animals accidentally ingest them.">Plastic bags</a></strong> and twine can easily trap birds and other smaller animals, hurting or killing them or making them easy prey. So put on your gloves, grab some trash bags, and pick up litter to protect wildlife—and keep your neighborhood looking good.
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-white text-dark">
+                <div class="card-header bg-dark">
+                  <a class="collapsed card-link text-white" data-toggle="collapse" href="#collapseSix">
+                    6. Become a citizen scientist
+                  </a>
+                </div>
+                <div id="collapseSix" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                    Researchers who need help gathering wildlife and insect counts may turn to the public for help. This provides interesting and fun opportunities for you to lend a hand from home. For example, the <strong><a href="#" data-toggle="popover" title="What is The Great Sunflower Project?" data-trigger="hover" data-content="The Great Sunflower Project has three programs. The Safe Gardens for Pollinators program which uses data collected on Lemon Queen sunflowers to examine the effects of pesticides on pollinators. The Pollinator Friendly Plants program which is designed to identify the key plants to support healthy pollinator communities.">Great Sunflower Project</a></strong> is studying bee populations around the country. To participate, you need a bit of a green thumb. The project asks that you plant and grow lemon queen sunflowers in your yard. Once they bloom, you count the number of pollinators that land on the sunflowers in five-minute segments.
+                    <br>
+                    <br>
+                    Love lizards instead? Head on over to Zooniverse’s project center and count Galapagos Island iguanas from aerial photos, or help transcribe historical records to help scientists understand nesting patterns. The Cornell University Lab of Ornithology’s Nestwatch program is also looking for volunteers to report on the nesting habits of birds in their area. Take a test to get certified, then explore the outdoors around you and report back on the nests you find. Or sit back and log on to Penguin Watch to help count penguins in remote regions to help scientists better understand them.
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-white text-dark">
+                <div class="card-header bg-dark">
+                  <a class="collapsed card-link text-white" data-toggle="collapse" href="#collapseSeven">
+                    7. Learn about endangered species
+                  </a>
+                </div>
+                <div id="collapseSeven" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                    <strong><a href="#" data-toggle="popover" title="What is the Endengered Species Coalition?" data-trigger="hover" data-content="What is the mission of the endangered species?
+                      They provide national leadership in the recovery and conservation of our nation's imperiled plant and animal species, working with experts in the scientific community to identify species on the verge of extinction and to build the road to recovery to bring them back.">The Endangered Species Coalition</a></strong> helps identify endangered species and share how people can help to preserve them. The U.S. Fish and Wildlife Service also has an endangered species website that shares information about endangered animals in the U.S. and how people can help them. Share what you learn on social media or get involved with a conservation organization. 
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-white text-dark">
+                <div class="card-header bg-dark">
+                  <a class="collapsed card-link text-white" data-toggle="collapse" href="#collapseEight">
+                    8. Adopt an animal
+                  </a>
+                </div>
+                <div id="collapseEight" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                    Protect the animal of your choice—one either threatened by endangerment in a far-off land or by abandonment nearby <strong><a href="#" data-toggle="popover" title="What is the Defender of Wildlife?" data-trigger="hover" data-content="Defenders of Wildlife is a 501 non-profit conservation organization based in the United States. It works to protect all native animals and plants throughout North America in their natural communities. ">Defenders of Wildlife</a></strong> lets you symbolically adopt a wild animal of your choosing. Your donation goes to improving habitats, research, monitoring, and ultimately saving the species from endangerment. Make it a birthday gift for your animal fanatic friend! 
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-white text-dark">
+                <div class="card-header bg-dark">
+                  <a class="collapsed card-link text-white" data-toggle="collapse" href="#collapseNine">
+                    9. Do your part
+                  </a>
+                </div>
+                <div id="collapseNine" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                    What animal rights issue troubles you the most? Poaching? Cruelty? Fur? Whatever it is, you can act. <strong><a href="#" data-toggle="popover" title="What is Humane Society and World Wildlife Fund?" data-trigger="hover" data-content="A humane society is a group that aims to stop cruelty to animals. In many countries, the term is used mostly for societies for the prevention of cruelty to animals. Whereas, WWF works to help local communities conserve the natural resources they depend upon; transform markets and policies toward sustainability; and protect and restore species and their habitats.">Humane Society and World Wildlife Fund</a></strong> can help you find out petitions to sign, bills to support and state representatives to write. By acting, you’ll give a voice to those who don’t have one.
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-white text-dark">
+                <div class="card-header bg-dark">
+                  <a class="collapsed card-link text-white" data-toggle="collapse" href="#collapseTen">
+                    10. Donate
+                  </a>
+                </div>
+                <div id="collapseTen" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                    Your gift to a trusted animal rights organization will be appreciated and well utilized. By supporting their concerted efforts, you play a valuable role in the protection of wildlife and in helping our planet thrive. You can also donate to local shelters in need. Many animal shelters and rescue centers lack the necessary provisions to keep animals healthy and safe. If you can’t adopt, giving your extra food and supplies—or volunteering—can be just as valuable in helping these shelters survive..
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-white text-dark">
+                <div class="card-header bg-dark">
+                  <a class="collapsed card-link text-white" data-toggle="collapse" href="#collapseEleven">
+                    11. Understand human impact 
+                  </a>
+                </div>
+                <div id="collapseEleven" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                    Population increases pose a threat to wildlife as previous resources diminish. Whether it’s for science, food or greed, humans endanger animals, sometimes without considering the positive impact wildlife can have on the posterity of our planet. What can you do? Stay informed on the issues, know your impact in the ecosystem and take your part in protecting wildlife. Earth and its present and future habitants will be grateful.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+    </div>
+    <hr>
+    <!--Membership-->
+    <div class="container" id="membership">
+      <H1 >BECOME A MEMBER OF OUR PH WILDLIFE CONSERVATION TEAM!</H1>
+      <div class="row">
+        <center></center>
+          <div class="col-sm-6">
+                  <h5>
+                    By becoming a member, volunteer, or donor, you are taking a stand for the future of all the life forms in the planet. Together, we can make a difference in conserving the unique and irreplaceable wildlife of the Philippines.
+                    <br>
+                    <br>
+                    Ready to take action? Join us today and be a part of something extraordinary
+                  </h5>
+          </div>
+          <div class="col-sm-6">
+            <button class="btn btn-dark ml-5 p-3" data-toggle="modal" data-target="#form">BECOME A MEMBER</button>
+          </div>
+      </center>
+    </div>
+    </div>
+
+    <!--footer-->
+    <footer class="footer bg-dark">
+      <div class="container">
+        <div class="col1">
+          <a href="#" class="brand">The Philippine Wildlife</a>
+          <ul class="media-icons">
+            <li>
+              <a href="https://youtu.be/iCwKJmiFwic?si=02XF70E0UqtWD086"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+            <li>
+              <a><i class="fa-brands fa-discord" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"></i></a>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content bg-dark">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">This page says...</h1>
+                    </div>
+                    <div class="modal-body">
+                      This function is not available.
+                    </div>
+                    <br>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a><i class="fa-brands fa-instagram" class="btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal"></i></a>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content bg-dark">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">This page says...</h1>
+                    </div>
+                    <div class="modal-body">
+                      This function is not available.
+                    </div>
+                    <br>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col2">
+          <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <p>A Philippine wildlife provides information about the wildlife of the Philippines, such as animals, plants, habitats, conservation, and wildlife watching.</p>
+          </ul>
+        </div>
+        <!--Donate-->
+        <div class="col3">
+          <p>Send us a message.</p>
+          <form>
+            <div class="input-wrap">
+              <input type="email" placeholder="ex@gsfe.edu.ph"/><button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+          </form>
+          <p>Donate</p>
+          <ul class="services-icons">
+            <!--modals-->
+            <li>
+              <a href="#"><i class="fa-brands fa-cc-paypal" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModall"></i></a>
+              <div class="modal fade" id="exampleModall" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content bg-dark">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Donate</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div id="liveAlertPlaceholder"></div> 
+                      <form>
+                        <div class="mb-3">
+                          <label for="recipient-name" class="col-form-label">Name:</label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="mb-3">
+                          <label for="amount-text" class="col-form-label">Amount:</label>
+                          <input type="number" class="form-control" id="recipient-name">
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>                   
+                      <button type="button" class="btn btn-primary" id="liveAlertBtn">Donate</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-cc-apple-pay" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModall"></i></a>
+              <div class="modal fade" id="exampleModall" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content bg-dark">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Donate</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                          <label for="recipient-name" class="col-form-label">Name:</label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="mb-3">
+                          <label for="amount-text" class="col-form-label">Amount:</label>
+                          <input type="number" class="form-control" id="recipient-name">
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>                   
+                      <button type="button" class="btn btn-primary" id="liveAlertBtn">Donate</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-google-pay" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModall"></i></a>
+              <div class="modal fade" id="exampleModall" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content bg-dark">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Donate</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                          <label for="recipient-name" class="col-form-label">Name:</label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="mb-3">
+                          <label for="amount-text" class="col-form-label">Amount:</label>
+                          <input type="number" class="form-control" id="recipient-name">
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>                   
+                      <button type="button" class="btn btn-primary" id="liveAlertBtn">Donate</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-cc-amazon-pay" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModall"></i></a>
+              <div class="modal fade" id="exampleModall" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content bg-dark">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Donate</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                          <label for="recipient-name" class="col-form-label">Name:</label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="mb-3">
+                          <label for="amount-text" class="col-form-label">Amount:</label>
+                          <input type="number" class="form-control" id="recipient-name">
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>                   
+                      <button type="button" class="btn btn-primary" id="liveAlertBtn">Donate</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="mekk">
+          <p>PhilWildlife 2023 - All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <!--Modals for About Us-->
+    <div class="modal fade" id="myModal1">
+      <div class="modal-dialog modal-xl shadow">
+        <div class="modal-content">
+          <div class="modal-header bg-dark text-white">
+            <h2>Diane Claire Fajardo</h2>
+          </div>
+          <div class="modal-body">
+            <div class="row align-items-start mt-5 p-4">
+                <div class="col">
+                    <img class="mr-3 rounded-circle" src="./imgs/dc.jpg" alt="Diane Claire M. Fajardo" id="pic">
+                </div>
+                <div class="col sm-12" id="textabout">
+                  <h3>Diane Claire M. Fajardo</h3>
+                  <p>She was a 3rd year Bachelor of Engineering Technology major in Computer Engineering Technology student in Technological University of the Philippines - Cavite. She lives in San Pedro City, Laguna. </p>
+                  <br>
+                  <p>See more about <a href="https://www.facebook.com/dianeclaire.fajardo/">Fajardo</a></p>
+                </div>
+            </div>
+          </div>
+          <div class="modal-footer bg-dark">
+            <input type="text" class="btn btn-primary" data-dismiss="modal" value="Close">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="myModal2">
+      <div class="modal-dialog modal-xl shadow">
+        <div class="modal-content">
+          <div class="modal-header bg-dark text-white">
+            <h2>John Paul Villanueva</h2>
+          </div>
+          <div class="modal-body">
+            <div class="row align-items-start mt-5 p-4">
+                <div class="col">
+                    <img class="mr-3 rounded-circle" src="./imgs/jp.jpg" alt="John Paul Villanueva" id="pic">
+                </div>
+                <div class="col sm-12" id="textabout">
+                  <h3>John Paul Villanueva</h3>
+                  <p>He was a 3rd year Bachelor of Engineering Technology major in Computer Engineering Technology student in Technological University of the Philippines - Cavite. He lives in General Trias, Cavite. </p>
+                  <br>
+                  <p>See more about <a href="https://www.facebook.com/johnpaul.villanueva.58173">Villanueva</a></p>
+                </div>
+            </div>
+          </div>
+          <div class="modal-footer bg-dark">
+            <input type="text" class="btn btn-primary" data-dismiss="modal" value="Close">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Membership Form-->
+    <div class="modal fade" id="form">
+      <div class="modal-dialog modal-xl shadow">
+        <div class="modal-content">
+          <div class="modal-header bg-dark text-white" id="formheader">
+            <h2>BECOME A MEMBER OF WILDLIFE CONSERVATION ORG!</h2>
+          </div>
+          <div id="liveAlertPlaceholder"></div>
+          <div class="modal-body">
+            <center>
+              <hr>
+              <h1>MEMBERSHIP FORM</h1>
+              <hr>
+              <p>Become a member by filling the form below</p>
+              <table id="form_table">
+                <tr>
+                  <td>
+                    <div class="inputs">
+                      <label for="fname">First Name:</label>
+                      <input type="text" id="fname" name="fname" required>
+                    </div>
+                    <div class="inputs">
+                      <label for="lname">Last Name:</label>
+                      <input type="text" id="lname" name="lname" required>
+                    </div>
+                    <div class="inputs">
+                      <label for="mn">Middle Name (optional):</label>
+                      <input type="text" id="mn" name="mn">
+                    </div>
+                    <div class="inputs">
+                      <label for="extension">Name Extension (optional):</label>
+                      <input type="text" id="extension" name="extension" placeholder="(ex. Jr.)">
+                    </div>
+                    <div class="inputs">
+                      <label for="course">Municipality</label>
+                      <select id="course">
+                        <option value="Select">Select Municipality</option>
+                        <option value="BET-COET">Dasmarinas</option>
+                        <option value="BET-ET">General Trias</option>
+                        <option value="BET-CT">Bacoor</option>
+                        <option value="BET-MT">Imus</option>
+                        <option value="BET-AT">Silang</option>
+                        <option value="BET-PPT">Tagaytay</option>
+                        <option value="BET-ESET">GMA</option>
+                        <option value="BTTE-CP">Noveleta</option>
+                        <option value="BTTE-EL">Rosario</option>
+                        <option value="BSIE-ICT">Carmona</option>
+                        <option value="BSIE-HE">Tanza</option>
+                        <option value="BSIE-IA">Cavite City</option>
+                        <option value="BSME">Trece</option>
+                        <option value="BSEE">Kawit</option>
+                        <option value="BSCE">Naic</option>
+                      </select>
+                    </div>
+                    <div class="inputs">
+                      <label for="email">Email:</label>
+                      <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                    </div>
+                    <button id="submit" onclick="InsertData()">Submit</button>
+                  </td>
+                  <td id="pic_loc">
+                    <div id="profile-container">
+                      <img src="./imgs/empty_pic.jpg" id="profile_pic">
+                      <label for="file" id="upload_photo">Upload your Photo</label>
+                      <br>
+                      <input type="file" id="file" accept="image/jpeg, image/png, image/jpg" required>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </center>
+          </div>
+          <div class="modal-footer bg-dark">
+            <input type="text" class="btn btn-primary" data-dismiss="modal" value="Close">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
